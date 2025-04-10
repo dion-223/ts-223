@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrackyStreams - Live Sports Streaming</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-black text-white">
+    <!-- Navbar -->
+     <!-- Navbar -->
+    <nav class="bg-neutral-900 fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="https://trackystreams.com" class="text-2xl font-bold text-white">TrackyStreams</a>
+                <div class="hidden md:block flex-grow">
+                    <div class="flex items-baseline justify-center space-x-6">
+                        <a href="https://hoopystreams.com" class="hover:text-red-600 px-3 py-2 text-sm font-medium">NBA</a>
+                        <a href="https://hoopystreams.com" class="hover:text-red-600 px-3 py-2 text-sm font-medium">NCAA</a>
+                        <a href="https://rushystreams.com" class="hover:text-red-600 px-3 py-2 text-sm font-medium">NFL</a>
+                        <a href="https://rushystreams.com" class="hover:text-red-600 px-3 py-2 text-sm font-medium">CFB</a>
+                        <a href="https://pitchystreams.com" class="hover:text-red-600 px-3 py-2 text-sm font-medium">MLB</a>
+                        <a href="https://footystreams.xyz" class="hover:text-red-600 px-3 py-2 text-sm font-medium">SOCCER</a>
+                        <a href="https://trackystreams.com" class="hover:text-red-600 px-3 py-2 text-sm font-medium">F1</a>
+                        <a href="https://fightystreams.com" class="hover:text-red-600 px-3 py-2 text-sm font-medium">UFC</a>
+                        <a href="/blog" class="hover:text-red-600 px-3 py-2 text-sm font-medium">BLOG</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button type="button" class="text-white hover:text-red-600 p-2">
+                        <span class="sr-only">Open menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-12">
+            <h1 class="text-4xl font-bold text-white mb-4">Your F1 Streams</h1>
+            <p class="text-xl text-gray-400">Stream for free in HD | Find your stream below!</p>
+        </div>
+
+        <!-- Schedule Section -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Schedule Content -->
+            <div class="bg-neutral-900 rounded-lg p-6">
+                <div id="schedule-container" class="space-y-4">
+                    <!-- Games will be injected here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- SEO Section -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="bg-neutral-900 rounded-lg p-6 text-sm text-gray-400">
+                <h2 class="text-lg font-semibold text-white mb-2">Watch Free F1 Streams</h2>
+                <p class="mb-4">
+                    At TrackyStreams, your destination for free F1 live streaming, we bring you every Grand Prix, sprint race, qualifying session, and practice — all in high quality with zero paywalls. Whether you're following the drama of the Constructors' battle or your favorite driver's push for the podium, TrackyStreams delivers fast, reliable access to the full Formula 1 calendar.
+                </p>
+
+                <h3 class="text-lg font-semibold text-white mb-2">Why Choose TrackyStreams?</h3>
+                <p class="mb-4">
+                    Full F1 Coverage: Catch every session from lights out to the final lap — including Practice 1, 2, 3, Qualifying, and every Race Day. We cover all F1 events, including the Las Vegas GP, Monaco GP, and Abu Dhabi finale.
+                    Lightning-Fast Streaming Access: With no sign-ups and a smooth, mobile-friendly layout, TrackyStreams ensures you get to your stream without pop-up hell or confusing redirections.
+                    Multiple Server Options: If one stream lags, switch between up to three backup servers, so you never miss a wheel-to-wheel moment.
+                    No Downloads or Subscriptions: We keep it clean. TrackyStreams works in your browser with no installations, no accounts, and no unnecessary noise.
+                </p>
+
+                <h3 class="text-lg font-semibold text-white mb-2">How TrackyStreams Works</h3>
+                <p class="mb-4">
+                    TrackyStreams doesn't host streams directly — instead, we source and curate the best F1 streams from across the internet and embed them in a streamlined viewing experience. You pick the session, click your server, and boom — Formula 1 action live.
+                </p>
+
+                <h3 class="text-lg font-semibold text-white mb-2">Built for F1 Fans</h3>
+                <p class="mb-4">
+                    TrackyStreams is designed for people who actually watch the sport. Whether you're in it for team strategies, pit stop battles, or last-lap chaos, we built this platform to get you straight to the race without friction.
+                </p>
+
+                <h3 class="text-lg font-semibold text-white mb-2">Stay Connected with TrackyStreams</h3>
+                <p>
+                    We'll keep adding features — live standings, driver news, and maybe even race replays. Bookmark us and check back every race weekend. No paywalls. No BS. Just Formula 1.
+                </p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-neutral-900 py-6 mt-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center text-gray-400 text-sm">
+                    <p>&copy; 2024 TrackyStreams. All rights reserved.</p>
+                    <p class="mt-2">Disclaimer: This site does not host any video content.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            function toggleMobileMenu() {
+                const mobileMenu = document.getElementById('mobile-menu');
+                mobileMenu.classList.toggle('hidden');
+            }
+
+            const CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSq2jqCNREvVZgTkKnv0hYKfpqVYcYNjKVvzompkAUdZcALDe1JB-gtMy3hatCAnVtKPhLa7NN7wbTK/pub?output=csv";
+
+            fetch(CSV_URL)
+                .then(res => res.text())
+                .then(data => {
+                    const rows = data.trim().split("\n").slice(1); // Skip header row
+                    const container = document.getElementById("schedule-container");
+                    container.innerHTML = "";
+
+                    rows.forEach(row => {
+                        // Use regex to properly parse CSV, handling commas within quotes
+                        const matches = row.match(/(?:^|,)("(?:[^"]*(?:""[^"]*)*)"|[^,]*)/g);
+                        if (!matches || matches.length < 3) return;
+                        
+                        const time = matches[0].replace(/^,|"|"/g, '').trim();
+                        const matchup = matches[1].replace(/^,|"|"/g, '').trim();
+                        const streamLink = matches[2].replace(/^,|"|"/g, '').trim();
+
+                        // Skip rows with missing data
+                        if (!time || !matchup || !streamLink) return;
+
+                        const card = document.createElement("div");
+                        card.className = "bg-neutral-950 rounded p-4 hover:bg-neutral-900 transition duration-300";
+
+                        card.innerHTML = `
+                            <div class="grid grid-cols-12 gap-4 items-center">
+                                <div class="col-span-2 text-gray-400">${time}</div>
+                                <div class="col-span-6 font-semibold text-white">${matchup}</div>
+                                <div class="col-span-4 text-right">
+                                    <a href="${streamLink}" class="bg-red-600 text-white px-4 py-1 rounded hover:bg-red-700 inline-block text-center">Watch</a>
+                                </div>
+                            </div>
+                        `;
+
+                        container.appendChild(card);
+                    });
+                })
+                .catch(error => {
+                    console.error("Failed to fetch schedule:", error);
+                    const container = document.getElementById("schedule-container");
+                    container.innerHTML = `
+                        <div class="text-center text-gray-400 py-8">
+                            Unable to load schedule. Please try again later.
+                        </div>
+                    `;
+                });
+        </script>
+        
+    </main>
+</body>
+</html>
